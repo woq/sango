@@ -1,24 +1,13 @@
 # sango
+做了个小工具来实战
+- 技术栈
+- Vue
+  - VueRouter
+  - VueX
+- Bootstrap5
+  - popperjs
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 计划
+- index `/` 'home.vue'
+- about '/about' 'about.vue'
+- 
