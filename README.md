@@ -4,9 +4,9 @@
 - 技术栈
 - Vue
   - VueRouter
-  - VueX
+  - VueX *
 - Bootstrap5
-  - popperjs
+  - popperjs *
 
 ## 计划
 
