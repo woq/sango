@@ -16,7 +16,7 @@
                 <th scope="row">{{item.symbol}} </th>
                 <th scope="row">{{item['rate']}}</th>
                 <th scope="row">{{item['description']}}</th>
-                <th scope="row">{{item['rate_float']}}</th>
+            <th scope="row">{{item['rate_float']}}</th>
             </tr>
         </tbody>
         </table>
@@ -30,7 +30,7 @@ export default {
   name: 'Axios',
   data(){
       return {
-          info: 'Loading',
+          info: Object,
       }
   },
   methods: {
