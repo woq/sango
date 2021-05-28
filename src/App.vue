@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="text-decoration: none;">
     <div class="container-fluid">
       <a class="navbar-brand">保链 - 2021纪念版</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,14 +25,6 @@
   <router-view/>
   </div>
 </template>
-
 <style> 
-a {
-    text-decoration: none;
-  }
- 
-.router-link-active {
-    text-decoration: none;
-  }
 
 </style>
