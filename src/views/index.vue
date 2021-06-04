@@ -1,13 +1,42 @@
 <template>
-  <h1>index</h1>
+  <div class="d-flex align-items-center justify-content-center" style="height:70vh;">
+    <div class="card" style="width:20rem;height:20rem;">
+      <div class="card-header text-center">保链</div>
+      <div class="card-body justify-content-center align-items-center text-center">
+        <textarea class="form-control text-center" name="url" v-model="links"
+                                                                       placeholder="输入单个或多个链接地址
+多个链接地址用回车分开" style="height:10rem;"></textarea><br /><button class="btn btn-primary"  @click="postLinks()">提交</button>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
+import axios from "axios"
 export default {
-  name: "index"
+  name: "index",
+  data(){
+    return{
+      links:"",
+    }
+  },
+  methods: {
+    postLinks(){
+      axios
+          .post('https://app.wugniu.com/add',this.links)
+          .then(response => {alert(response.data)})
+          .catch(error => console.log(error, "error"));
+    }
+  }
 }
 </script>
 
 <style scoped>
+a {
+  text-decoration: none;
+}
 
+.router-link-active {
+  text-decoration: none;
+}
 </style>

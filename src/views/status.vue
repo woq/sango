@@ -1,10 +1,10 @@
 <template>
-  <h1>关于什么好呢</h1>
+<h1>想好了写什么,但没有写好</h1>
 </template>
 
 <script>
 export default {
-  name: "about"
+  name: "status"
 }
 </script>
 
