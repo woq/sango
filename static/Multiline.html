@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.0-beta2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <title>保链 - StayLink</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid"><a class="navbar-brand" href="#">保链 - StayLink</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="home" href="/">主页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/add_Multi">添加多个</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">关于(正在施工)</a></li>
+                </ul><span class="badge bg-primary">v0.1.0-20210411</span>
+            </div>
+        </div>
+    </nav>
+    <div class="d-flex align-items-center justify-content-center" style="height:70vh;">
+        <div class="card" style="width:20rem;height:20rem;">
+            <div class="card-header text-center">保链</div>
+            <div class="card-body justify-content-center align-items-center">
+                <form class="text-center" action="add_Multi_Post" method="post"><textarea class="form-control text-center" name="url" placeholder="输入单个或多个链接地址 多个链接地址用回车分开" style="height:10rem;"></textarea><br /><button class="btn btn-primary" type="submit">提交</button></form>
+            </div>
+        </div>
+    </div>
+</body>
