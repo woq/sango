@@ -18,11 +18,19 @@ export default {
   data(){
     return{
       links:"",
-      data:"",
+      Data:"",
     }
   },
   methods: {
     postLinks(){
+      axios
+          .post('http://127.0.0.1:3001/users',{
+            urls:this.links,
+          })
+          .then(response => {console.log(response.data)})
+          .catch(error => alert(error.message));
+    },
+    getLinks(){
       this.data = this.links.split(/[\s\n]/)
       for (let key in this.data){
         console.log(this.data[key])
@@ -31,7 +39,7 @@ export default {
             .then(response => {console.log(response.status)})
             .catch(error => alert(error.message));
       }
-      }
+    }
   }
 }
 </script>
