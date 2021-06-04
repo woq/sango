@@ -18,15 +18,20 @@ export default {
   data(){
     return{
       links:"",
+      data:"",
     }
   },
   methods: {
     postLinks(){
-      axios
-          .post('https://app.wugniu.com/add',this.links)
-          .then(response => {alert(response.data)})
-          .catch(error => console.log(error, "error"));
-    }
+      this.data = this.links.split(/[\s\n]/)
+      for (let key in this.data){
+        console.log(this.data[key])
+        axios
+            .get(this.data[key])
+            .then(response => {console.log(response.status)})
+            .catch(error => alert(error.message));
+      }
+      }
   }
 }
 </script>
