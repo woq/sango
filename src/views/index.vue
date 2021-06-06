@@ -23,13 +23,19 @@ export default {
   },
   methods: {
     postLinks(){
-      axios
-          .post('http://127.0.0.1:3001/users',{
-            urls:this.links,
-          })
-          .then(response => {console.log(response.data)})
-          .catch(error => alert(error.message));
-    },
+      if (this.links === ""){
+        alert('啥都没有 提交啥?');
+      }else {
+        axios
+            .post('http://127.0.0.1:3001/users',{
+              urls:this.links,
+            })
+            .then(response => {console.log(response.data)})
+            .catch(error => console.log(error.message));
+      }
+
+    }
+    /*
     getLinks(){
       this.data = this.links.split(/[\s\n]/)
       for (let key in this.data){
@@ -38,10 +44,10 @@ export default {
             .get(this.data[key])
             .then(response => {console.log(response.status)})
             .catch(error => alert(error.message));
-      }
+      }*/
+
     }
   }
-}
 </script>
 
 <style scoped>
