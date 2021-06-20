@@ -18,17 +18,16 @@ export default {
   data(){
     return{
       links:"",
-      Data:"",
     }
   },
   methods: {
     postLinks(){
       if (this.links === ""){
-        alert('啥都没有 提交啥?');
+        alert('什么都没有?');
       }else {
         axios
-            .post('http://127.0.0.1:3001/users',{
-              urls:this.links,
+            .post('/add_Multi',{
+              url:this.links,
             })
             .then(response => {console.log(response.data)})
             .catch(error => console.log(error.message));

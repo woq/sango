@@ -17,6 +17,7 @@
             <router-link to="/about"><a class="nav-link">关于保链</a></router-link>
           </li>
         </ul>
+
         <span class="badge bg-primary">v1.1-20210525</span>
       </div>
     </div>
